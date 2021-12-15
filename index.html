@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Explore the World</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#eve">Tours</a></li>
+        <li><a href="#exp">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li class="ctn"><a href="#footer">Contact</a></li>
+      </ul>
+      <img src="./images/img/menu-btn.png" alt="menu" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2>Explore The Colorful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn to More</a>
+      </div>
+    </header>
+
+    <section class="events" id="eve">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./images/img/img1.png" alt="" />
+          <h4>Himalayas Trek</h4>
+          <p>
+            The trek to Everest Base Camp is among the most dramatic and
+            picturesque in the Himalaya.To the people who lives for mountains.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+
+        <div class="col">
+          <img src="./images/img/img2.png" alt="" />
+          <h4>Himalayas Trek</h4>
+          <p>
+            You are off to great places, today is your day. Your mountain is
+            waiting so get on your way.Perfect for beginners and intermediate
+            trekkers.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="exp">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+          It is in our nature to explore, to reach out into the unknown. The
+          only true failure would be not to explore at all
+        </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <p>
+        245 fifth Avenue, NC10160, New Castle, United Kingdom | Phone : 44
+        800-123-456 | Email : Wanderingsouls@gmail.com
+      </p>
+      <p>Copyright &copy;2021 Gobi's Adventures</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
